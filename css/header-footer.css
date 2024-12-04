@@ -1,0 +1,122 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    height: 70px; /* Ajusta la altura según sea necesario */
+    background-color: rgb(1, 61, 90);
+}
+
+.logo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.log{
+    display: block;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.log img{
+    width: 100%;
+    height: 100%;
+    }
+.cont-exit{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    height: 40px; /* Ajusta la altura según sea necesario */
+}
+
+.icon-cont{
+    margin-right: 5px;
+}
+
+.footer-container {
+    display: flex; /* Cambia a flex para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Mantiene el footer en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: small;
+    background-color: rgb(1, 61, 90);
+    z-index: -1; /* Asegúrate de que esté detrás del menú */
+    
+}
+
+
+.footer-container p{
+    padding-top: 5%;
+    color: #ffffff;
+}
+
+/* login */
+
+
+.header-container-login{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 55px;
+    background-color: rgb(1, 61, 90);
+}
+.header-container-login p{
+    margin: 0;
+    padding-left: 20%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.header-container-login h1{
+    padding-left: 5px;
+}
+
+.logo-container-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.logo-login {
+    display: block;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.logo-login img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container-login {
+    display: flex; /* Cambia a flex para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Mantiene el footer en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: small;
+    background-color: rgb(1, 61, 90);
+    z-index: -1; /* Asegúrate de que esté detrás del menú */
+}
+.footer-container-login p{
+    color: #ffffff;
+    padding-top: 5%;
+}

@@ -1,0 +1,301 @@
+html{
+    font-size: 80%;
+    font-family: Arial, sans-serif;
+}
+
+
+.exo-2-uniquifier h1{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+    position: relative;
+    top: 50px;    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Fondo difuminado */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url('../imagenes/image.png') no-repeat center center fixed; */
+    background-color:#dce7f1;
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1; 
+}
+
+
+
+.cont-exit{ 
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    height: 40px; /* Ajusta la altura según sea necesario */
+}
+
+  /*   #btn-menu{
+        display: none;
+    }
+    #btn-menu:checked ~ .nav-section{
+        opacity: 1;
+        visibility: visible;
+    }  */
+
+
+.nav-section {
+    display: flex; /* Para colocar el navbar y el contenido uno al lado del otro */
+} 
+.navbar {
+        width: 235px;
+        background-color: rgb(1, 61, 90);
+        padding-top: 20px;
+        position: fixed; /* Mantener el navbar fijo */
+        top: 70px; /* Colocar debajo del header */
+        bottom:30px; /* Dejar espacio para el footer */
+        display: flex;
+        flex-direction: column; /* Colocar los elementos en vertical */
+        justify-content: flex-start; /* Alinear al inicio */
+    }
+    
+    .navbar p {
+        padding: 1px 5px;
+        margin: 5px 0; /* Espaciado vertical entre enlaces */
+        color: black;
+        display: block;
+        
+    }
+    .cont-data{
+        display: block;
+        align-items: start;
+    }
+    .cont-data p{
+        color: white;
+        text-align:left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+   .bold{
+    font-weight: bold;
+    color: white;
+   } 
+   .flexi{
+    display: flex;
+
+   }   
+   
+    .info-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .menu-btn label{
+        background-color: #1697c6;
+        color: white; /* Texto en blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        font-size: 16px; /* Tamaño de fuente */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-flex; /* Permite alinear el ícono y el texto */
+        align-items: center; /* Alineación vertical */
+    }
+    
+    .menu-btn label:hover{
+        background-color: #0a6a9f; 
+    }
+    .registrar-btn{
+        position:relative;
+        left: 90px;
+        float: left;
+        margin-left: 200px;
+        margin-top: 30px;
+    }
+    .registrar-btn a{
+        background-color: #1697c6;
+        color: white; /* Texto en blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        font-size: 15px; /* Tamaño de fuente */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-flex; /* Permite alinear el ícono y el texto */
+        align-items: center; /* Alineación vertical */
+    }
+    
+    .registrar-btn a:hover{
+        background-color: #0a6a9f; 
+    }
+
+    .container-search{
+        display: flex;
+        align-items: center;
+        float: right;
+        margin-right: 20px;
+        position: relative;
+        bottom: 190px;
+    }
+    .buscar-btn{
+        float: right;
+        margin-right: 20px;
+        margin-top: 9px;
+    }
+    .buscar-btn button{
+        background-color: #1697c6;
+        color: white; /* Texto en blanco */
+        padding: 8px 18px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        font-size: 15px; /* Tamaño de fuente */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-flex; /* Permite alinear el ícono y el texto */
+        align-items: center; /* Alineación vertical */
+    }
+    
+    .buscar-btn button:hover{
+        background-color: #0a6a9f; 
+    }
+    .buscar-input{
+        float: left;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .buscar-input input{
+        width: 200px;
+        height: 30px;
+        padding-left: 15px;
+        border-radius: 10px;
+        border: none;
+        box-shadow:0px 0px 5px rgb(0, 0, 0); 
+    }
+
+    .main-section {
+        background-color:rgb(255, 255, 255);
+        margin-top: 50px;
+        margin-left: 250px; /* Espacio para el navbar */
+        margin-right: 100px;
+        flex: 1; /* Permite que el contenido ocupe el espacio restante */
+        padding: 20px;
+        border-radius: 15px 40px;
+        box-shadow:0px 0px 5px rgb(0, 0, 0, 0.20);
+        position: relative;
+        left: 40px;
+        bottom: 60px;
+    }
+
+.contenido{
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 250px;
+    margin-bottom: 100px;
+}
+.contenido h1{
+    position: relative;
+    top:25px;
+}
+
+
+.table-container {
+    background-color: #f2eded;
+    width: 80%;
+    margin: 25px auto;
+    max-height: 50vh; /* Ajusta según el padding/margen */
+    overflow-y: auto; /* Barra de desplazamiento vertical si hay más contenido */
+    border-radius: 15px;
+    border-bottom: 5px solid #0e6990;
+    box-shadow:0px 0px 5px rgb(0, 0, 0, 0.20);
+    
+}
+
+.table-container tbody tr{
+    border-bottom: 2px solid  #e1e1e1;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left; /* Alineación del texto */
+}
+
+th {
+    background-color: #0e6990; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto del encabezado */
+    text-align: center;
+}
+
+td {
+    max-width: 150px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el ratón */
+    cursor: pointer;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;  /* Asegura que el encabezado quede por encima de las filas */
+}
+
+table td:first-child {
+    width: 50px;
+    text-align: center;
+  }
+
+.buttons-action{
+    display: flex;
+} 
+
+.user-icon{
+    display: block;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+}
+.user-icon svg{
+    width: 100%;
+    height: 100%;
+    color:white;
+    stroke: white;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10px;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+

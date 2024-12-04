@@ -1,0 +1,36 @@
+.nav-cn{
+    padding-top: 100px;
+}
+.nav-opt a {
+    padding: 10px 10px;
+    margin: 5px 0; /* Espaciado vertical entre enlaces */
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.nav-opt {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.nav-icn {
+    padding-top: 10px;
+}
+
+.nav-opt:hover {
+    border-left: 5px solid #c7c7c7;
+    background-color: rgba(255, 255, 255); /* Color al pasar el mouse */
+    border-bottom: 4px solid rgb(7, 7, 7);
+}
+.nav-opt:hover a,
+.nav-opt:hover svg{
+    color:black;
+    stroke: black;
+}

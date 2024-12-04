@@ -1,0 +1,342 @@
+html{
+    font-size: 80%;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo difuminado */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imagenes/image.png') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 40px; /* Ajusta la altura según sea necesario */
+    background-color: rgba(255, 255, 255, 0.537);
+}
+.cont-exit{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    height: 40px; /* Ajusta la altura según sea necesario */
+}
+.logout-button {
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+.logout-button:hover {
+    background-color: #0a6a9f; /* Cambia el color de fondo al
+    pasar el ratón */
+    }
+
+    #btn-menu{
+        display: none;
+    }
+    #btn-menu:checked ~ .nav-section{
+        opacity: 1;
+        visibility: visible;
+    } 
+    .nav-section {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbar {
+        width: 250px;
+        max-width: 1250px;
+        background: #333;
+        height: 91.8vh;
+        position: relative; /* Mantener el navbar fijo */
+        transition: all 500ms ease;
+        padding-top: 50px;
+    }
+    
+    .navbar a {
+        padding: 10px 15px;
+        margin: 5px 0; /* Espaciado vertical entre enlaces */
+        text-decoration: none;
+        color: white;
+        display: block;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+    }
+    
+    .nav-option {
+        display: flex;
+        padding: 10px;
+    }
+    
+    .nav-icon {
+        padding-top: 10px;
+    }
+    
+    .navbar a:hover {
+        border-left: 5px solid #c7c7c7;
+        background-color: #575757; /* Color al pasar el mouse */
+    }
+    .navbar label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        padding-right: 5px;
+        color:#fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .menu-btn{
+        float: left;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .menu-btn label{
+        background-color: #1697c6;
+        color: white; /* Texto en blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        font-size: 16px; /* Tamaño de fuente */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-flex; /* Permite alinear el ícono y el texto */
+        align-items: center; /* Alineación vertical */
+    }
+    
+    .menu-btn label:hover{
+        background-color: #0a6a9f; 
+    }
+    .registrar-btn{
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .registrar-btn a{
+        background-color: #1697c6;
+        color: white; /* Texto en blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        font-size: 15px; /* Tamaño de fuente */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-flex; /* Permite alinear el ícono y el texto */
+        align-items: center; /* Alineación vertical */
+    }
+    
+    .registrar-btn a:hover{
+        background-color: #0a6a9f; 
+    }
+
+    
+.contenido {
+    height: 75vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.537);
+    border-radius: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.contenido h1{
+    padding-top: 20px;
+    padding-right: 100px;
+}
+.cont-btn{
+    padding-bottom: 50px;
+}
+
+.btn{
+    width: 25%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1697c6;
+    color: #fff;
+    cursor: pointer;;
+}
+.btn input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+.btn:hover{
+    background-color: #0a6c8c;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centra el formulario */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.info-container {
+    display: flex; /* Para colocar las dos secciones una al lado de la otra */
+    justify-content: space-between; /* Espacio entre columnas */
+    width: 100%; /* Ajustar a 100% del contenedor */
+}
+
+.personal-cont,
+.user-cont {
+    flex: 1; /* Cada sección toma el mismo espacio */
+    margin: 0 150px; /* Espaciado horizontal entre secciones */
+    max-width: 400px; /* Limita el ancho de cada contenedor */
+    box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
+}
+.personal-cont h2,
+.user-cont h2 {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    }
+
+.cont-inputs {
+    margin-bottom: 10px; /* Espaciado entre los inputs */
+}
+
+.cont-inputs label {
+    display: block; /* Asegura que las etiquetas ocupen toda la línea */
+    margin-bottom: 3px; /* Espaciado debajo de la etiqueta */
+}
+
+.cont-inputs input,
+.cont-inputs select {
+    width: 100%; /* Inputs y selects ocupan el ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no sume al ancho total */
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 10px;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    }
+
+
+
+    .footer-container {
+        display: flex; /* Cambia a flex para centrar contenido */
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        position: fixed; /* Mantiene el footer en la parte inferior */
+        bottom: 0;
+        width: 97.5%;
+        height: 19px;
+        font-size: small;
+        background-color: rgba(255, 255, 255, 0.537);
+        z-index: -1; /* Asegúrate de que esté detrás del menú */
+    }
+    
+    .modal {
+        display: none; /* Ocultamos la modal por defecto */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    
+    .modal-dialog {
+        position: relative;
+        margin: 10% auto;
+        width: 50%;
+    }
+    
+    .modal-content {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .modal-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .btn-close {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .modal-body {
+        padding: 15px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .modal-footer {
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .btn {
+        background-color: #1697c6;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: #0a6c8c;
+    }
+    
+    #closeModalFooterBtn {
+        width: 100px;
+        margin-top: 10px;
+    }

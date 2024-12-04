@@ -1,0 +1,225 @@
+.con-exit{
+    display: flex;
+    text-align: center;
+    padding: 2px 20px;
+    height: 40px; /* Ajusta la altura según sea necesario */
+}
+.out-button {
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 20px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+.out-button:hover {
+    background-color: #0a6a9f; /* Cambia el color de fondo al
+    pasar el ratón */
+    }
+
+
+    .cont-btn{
+        padding-bottom: 50px;
+    }
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .nav-section{
+    opacity: 1;
+    visibility: visible;
+} 
+.menu-btn{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.menu-btn label{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.menu-btn button:hover{
+    background-color: #0a6a9f; 
+}
+.menu-btn{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.menu-btn a{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 7px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.menu-btn a:hover{
+    background-color: #0a6a9f; 
+}
+.btn{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.btn a{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 7px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 15px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.btn-stat{
+    float: left;
+    margin-left: 5px;
+}
+.btn-stat a{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 7px 5px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 15px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.btn-stat a:hover{
+    background-color: #0a6a9f; 
+}
+.btn a:hover{
+    background-color: #0a6a9f; 
+}
+/* Estilo específico para el botón "Create User" */
+.create-user-btn {
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 7px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 15px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.create-user-btn:hover {
+    background-color: #0a6a9f;
+    color: white;
+}
+
+
+.container-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+.buscar-btn{
+    margin-right: 20px;
+}
+.buscar-btn button{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 6px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 15px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.buscar-btn button:hover{
+    background-color: #0a6a9f; 
+}
+.buscar-input{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.buscar-input input{
+    width: 150px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow:0px 0px 1px rgb(0, 0, 0);
+}
+
+.buttons-section{
+    display: flex;
+    width: 100%;  /* O el valor que desees para el ancho */
+    height: 50px;  /* Reduce la altura de la sección */
+    justify-content: flex-start;  /* Alineación de los botones a la izquierda */
+    align-items: center;  /* Alinea verticalmente los botones */
+    gap: 1px;  /* Espacio entre los botones */
+    margin: 0 auto;  /* Centra la sección (si es necesario) */
+}
+
+/* Modal*/
+/* Estilo para el botón de cerrar */
+.close-btn {
+    color: #f9f9f9;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Cambia el color del botón de cerrar cuando pasa el ratón */
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 2px 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 15px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+button[type="submit"]:hover {
+    background-color: #0a6a9f; 
+}
+

@@ -1,0 +1,120 @@
+html{
+    font-size: 80%;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo difuminado */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dce7f1;
+    background-size: cover;
+    z-index: -1; 
+}
+
+
+
+.nav-section {
+    display: flex; /* Para colocar el navbar y el contenido uno al lado del otro */
+}
+
+.navbar {
+    width: 230px;
+    background-color: rgb(1, 61, 90);
+    padding-top: 20px;
+    position: fixed; /* Mantener el navbar fijo */
+    top: 68px; /* Colocar debajo del header */
+    bottom: 30px; /* Dejar espacio para el footer */
+    display: flex;
+    flex-direction: column; /* Colocar los elementos en vertical */
+    justify-content: flex-start; /* Alinear al inicio */
+}
+
+.navbar a {
+    padding: 10px 15px;
+    margin: 5px 0; /* Espaciado vertical entre enlaces */
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-option {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgb(2, 82, 121);
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.nav-icon {
+    padding-top: 10px;
+}
+
+.nav-option:hover{
+    border-left: 5px solid #c7c7c7;
+    background-color: rgba(255, 255, 255); /* Color al pasar el mouse */
+    border-bottom: 4px solid rgb(1, 15, 64);
+}
+.nav-option:hover a,
+.nav-option:hover svg{
+    color:black;
+    stroke: black;
+}
+.menu-btn{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.menu-btn label{
+    background-color: #1697c6;
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Permite alinear el ícono y el texto */
+    align-items: center; /* Alineación vertical */
+}
+
+.menu-btn button:hover{
+    background-color: #0a6a9f; 
+}
+
+
+.main-section {
+    margin-left: 260px; /* Espacio para el navbar */
+    flex: 1; /* Permite que el contenido ocupe el espacio restante */
+    padding: 20px;
+    margin-right: 2%;
+}
+
+
+.contenido {
+    height: 70vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+    border-radius: 15px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.contenido h1{
+    padding-top: 50px;
+}
+
+.user-icon{
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.user-icon img{
+    width: 100%;
+    height: 100%;
+}
